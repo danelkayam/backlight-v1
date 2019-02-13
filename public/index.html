@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Backlight v1 Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/lib/materialize.css" />
+
+    <script type="text/javascript" src="/js/libs/jquery.js"></script>
+</head>
+
+<body>
+    <div id="container" class="z-depth-4">
+        <h2>Backlight Settings</h1>
+
+        <div class="option">
+            <p>
+                Select whatever to turn on / off the lights:
+            </p>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" id="light">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+        <div class="option">
+            <p>
+                Sets party mode:
+            </p>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" id="party">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+        <div class="option">
+            <p>
+                Sets whatever to check for connection.<br/>
+                If there isn't, a red light will be shown:
+            </p>
+            <div class="switch">
+                <label>
+                    <input type="checkbox" id="connection">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/libs/materialize.js"></script>
+    <script type="text/javascript" src="/js/libs/socket.io.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
+</html>
+</body>
+
+</html>
