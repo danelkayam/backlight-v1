@@ -19,12 +19,28 @@
 
    See pictures in the `pictures` directory.
 
+### Running the project:
+   The service requires the following environment variables (can be placed for development in a .env file):
+   ```bash
+# General
+LOG_LEVEL='debug'
+
+# server configurations
+PORT=3000
+
+# Board configurations
+DATA_PIN=6
+STRIP_LENGTH=36
+PARTY_ANIMATION_FPS=10
+DEAFAULT_COLOR='#d6c728'
+   ```
+
 
 ****
 ### Why not mqtt?
    At that time I thought about two things:
-   1. This will be my only connected device for a long time.
-   2. I wanted to play with socket.io and Johnny Five libs.
+   1. This will be my only connected device for a long time and I dind't want an external server.
+   2. I wanted to play with socket.io and Johnny-Five libs.
    
    Since I've seen this project works and used it for a while (almost an year!), I wanted more. And mqtt is the solution for next version.
 
@@ -44,4 +60,3 @@ Now I'm not quite sure if it's correct :|
 * [Running nodejs from boot 1](https://github.com/chovy/node-startup)
 * [Running nodejs from boot 2](https://www.axllent.org/docs/view/nodejs-service-with-systemd/)
 * [Setting .local domain instead of typing ip all the time](https://www.howtogeek.com/167190/how-and-why-to-assign-the-.local-domain-to-your-raspberry-pi/)
-   
