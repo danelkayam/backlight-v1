@@ -19,7 +19,7 @@
     "johnny-five": "^0.13.0",
     "morgan": "^1.9.0",
     "node-pixel": "^0.9.3",
-    "socket.io": "^2.0.4",
+    "socket.io": "^2.4.0",
     "winston": "^2.4.0"
   }
 }
